@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  mysql:
+    container_name: database
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=ifinance
+    ports:
+      - "3306:3306"
